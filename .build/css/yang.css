@@ -1,0 +1,15 @@
+/* line 1, E:\kraken-examples-master\kraken-examples-master\with.specialization\css\yang */
+#yang {
+  background-color: #ffffcc;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+}
+/* line 9, E:\kraken-examples-master\kraken-examples-master\with.specialization\css\yang */
+#yang td {
+  text-align: center;
+  margin: 30px 40px;
+  color: #000000;
+  font-weight: bold;
+}

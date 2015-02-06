@@ -1,0 +1,68 @@
+/* line 1, E:\kraken-examples-master\kraken-examples-master\with.specialization\public\css\index.less */
+img {
+  height: auto;
+  width: auto;
+  max-width: 30px;
+  max-height: 30px;
+  padding-right: 10px;
+}
+/* line 9, E:\kraken-examples-master\kraken-examples-master\with.specialization\public\css\index.less */
+body {
+  background: url("/img/bg-yinyang.jpeg");
+  background-size: 100% auto;
+  color: #f5f5ff;
+}
+/* line 15, E:\kraken-examples-master\kraken-examples-master\with.specialization\public\css\index.less */
+ul {
+  list-style-type: none;
+}
+/* line 20, E:\kraken-examples-master\kraken-examples-master\with.specialization\public\css\index.less */
+.wrapper {
+  text-align: center;
+}
+/* line 24, E:\kraken-examples-master\kraken-examples-master\with.specialization\public\css\index.less */
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block;
+  width: 130px;
+  margin: 10px auto 0px auto;
+}
+/* line 30, E:\kraken-examples-master\kraken-examples-master\with.specialization\public\css\index.less */
+ div.center {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 40, E:\kraken-examples-master\kraken-examples-master\with.specialization\public\css\index.less */
+div.transbox {
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+}
+/* line 49, E:\kraken-examples-master\kraken-examples-master\with.specialization\public\css\index.less */
+div.transbox table {
+  width: 400px;
+}
+/* line 53, E:\kraken-examples-master\kraken-examples-master\with.specialization\public\css\index.less */
+div.transbox td {
+  text-align: center;
+  margin: 30px 40px;
+  color: #000000;
+  font-weight: bold;
+}
+/* line 61, E:\kraken-examples-master\kraken-examples-master\with.specialization\public\css\index.less */
+div.transbox img {
+  max-width: 100px;
+  max-height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 69, E:\kraken-examples-master\kraken-examples-master\with.specialization\public\css\index.less */
+#moreInfo {
+  padding: 10px;
+}

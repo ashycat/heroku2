@@ -1,0 +1,90 @@
+{
+    "express": {
+        "view cache": false,
+        "view engine": "js",
+        "views": "path:./.build/templates"
+    },
+
+    "view engines": {
+        "js": {
+            "module": "engine-munger",
+            "renderer": {
+                "method": "js",
+                "arguments": [
+                    { "cache": true },
+                    {
+                        "views": "config:express.views",
+                        "view engine": "config:express.view engine",
+                        "specialization": "config:specialization",
+                        "i18n": "config:i18n"
+                    }
+                ]
+            }
+        }
+    },
+    "specialization": "import:./specialization.json",
+
+    "i18n": {
+        "contentPath": "path:./locales",
+        "fallback": "en-US"
+    },
+
+
+    "middleware": {
+
+        "static": {
+            "module": {
+                "arguments": [ "path:./.build" ]
+            }
+        },
+
+        "router": {
+            "module": {
+                "arguments": [{ "index": "path:./routes" }]
+            }
+        },
+
+        "expressView": {
+            "priority": 100,
+            "enabled": true,
+            "module": {
+                "name": "engine-munger/lib/expressView"
+            }
+        },
+
+        "fileNotFound": {
+            "enabled": true,
+            "priority": 130,
+            "module": {
+                "name": "kraken-js/middleware/404",
+                "arguments": [ "errors/404" ]
+            }
+        },
+
+        "serverError": {
+            "enabled": true,
+            "priority": 140,
+            "module": {
+                "name": "kraken-js/middleware/500",
+                "arguments": [ "errors/500" ]
+            }
+        },
+
+        "spclContext": {
+            "enabled": true,
+            "priority": 105,
+            "module": {
+                "name": "path:./lib/specialization"
+            }
+        },
+
+        "templatePath": {
+            "enabled":true,
+            "priority": 96,
+            "module": {
+                "name": "path:./lib/templatePath"
+            }
+        }
+    }
+
+}

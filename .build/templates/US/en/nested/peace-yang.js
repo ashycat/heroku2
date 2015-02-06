@@ -1,0 +1,1 @@
+(function(){dust.register("nested/peace-yang",body_0);function body_0(chk,ctx){return chk.write("<div>Peace for Yang!!!</div>");}return body_0;})();
